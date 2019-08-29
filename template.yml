@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  requests-python-layer
+Resources:
+  RequestsLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: requests-python-layer
+      Description: requests-python-layer
+      ContentUri: requests-python-layer.zip
+      CompatibleRuntimes:
+        - python3.7
+      RetentionPolicy: Retain
+Outputs:
+  LayerVersion:
+    Description: Layer ARN Reference
+    Value: !Ref RequestsLayer
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: requests-python-layer-app
+    Description: >
+      Requests Lib Lambda Layer for Python3.
+    SpdxLicenseId: Apache-2.07
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md 
+    Labels: ['layer', 'requests', 'lambda', 'auth', 'python37']
+    HomePageUrl: https://github.com/aaronosb/requests-lambda-layer-python-SAR
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/aaronosb/requests-lambda-layer-python-SAR
