@@ -20,6 +20,7 @@ Outputs:
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: requests-python-layer-app
+    Author: Aaron Osborne
     Description: >
       Requests Lib Lambda Layer for Python3.
     SpdxLicenseId: Apache-2.07
