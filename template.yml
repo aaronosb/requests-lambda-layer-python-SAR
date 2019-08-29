@@ -23,7 +23,7 @@ Metadata:
     Author: Aaron Osborne
     Description: >
       Requests Lib Lambda Layer for Python3.
-    SpdxLicenseId: Apache-2.07
+    SpdxLicenseId: Apache-2.0
     LicenseUrl: LICENSE.txt
     ReadmeUrl: README.md 
     Labels: ['layer', 'requests', 'lambda', 'auth', 'python37']
